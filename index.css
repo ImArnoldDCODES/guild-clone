@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: rgb(221, 245, 249);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+control{
+    display: none;
+}
+logo{
+    font-size: 1.7rem;
+    margin-top: 4rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+}
+nav ul button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+nav ul li{
+    list-style: none;
+    padding: 1rem;
+}
+
+main{
+    padding: 10rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+main h2{
+    font-size: 1.4rem;
+    color: rgb(8, 111, 213);
+    font-weight: 600;
+}
+main h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+main h4{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+main button{
+    background: rgb(8, 111, 213);
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 0.6rem;
+    border: none;
+    color: #fff;
+}
+.border-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    width: 40%;
+    margin-left: 32%;
+    margin-top: -2rem;
+    background-color: #fff;
+}
+.border-header h2{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.dot{
+    border-radius: 50%;
+    /* margin-left: 1.4rem; */
+    margin: auto;
+}
+
+content{
+    margin: 2rem;
+}
+content h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.3rem;
+    margin-top: 4rem;
+}
+.content-doc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:6rem 20rem 0 20rem;
+}
+.content-doc h4{
+    width: 40%;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+section{
+    margin: 10rem;
+}
+section h2{
+    font-size: 3.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* section h2::after{
+    content: "_";
+    color: rgb(91, 91, 212);
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+} */
+
+.promote{
+    margin: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.promote h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* .promote .dash::{
+    content: "";
+    border: 1px dotted  rgb(91, 91, 212);
+    display: flex;
+    width: 40rem;
+} */
+.promote p{
+    margin-left: 2rem;
+}
+.about{
+    background: rgb(202, 219, 237);
+    background-size: 10rem;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.about h3{
+    text-align: center;
+    font-size: 3rem;
+}
+.about button{
+    background: rgb(8, 111, 213);
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 0.8rem;
+    border: none;
+    color: #fff;
+    width: 20%;
+}
+.about p{
+    margin-top: 3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.blog{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10rem;
+}
+.blog h3{
+    font-size: 2rem;
+}
+
+footer{
+    margin: 10rem 10rem 2rem 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+footer h2{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+footer ul li{
+    list-style: none;
+    margin: 0.6rem;
+}
+
+/* Media queires */
+
+@media screen and (max-width: 1000px) {
+    nav ul{
+        display: none;
+    }
+    control{
+        display: block;
+        font-size: 10rem;
+    }
+    .border-header{
+        width: 30rem;
+        position: absolute;
+        margin-left: 15rem;
+    }
+    content .content-doc h4{
+        margin: 2.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    section h2{
+        text-align: center;
+    }
+
+    section .about button, p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    footer{
+        margin: 10rem 10rem 2rem 5rem;
+        position: absolute;
+    }
+    footer ul{
+        padding: 1.2rem;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main{
+        padding: 4rem;
+    }
+    .border-header{
+        display: none;
+    }
+    content{
+        margin: 10.2rem;  
+    }
+    content h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .content-doc{
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .content-doc h4{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+        margin: 10rem;
+    }
+    section{
+        margin: 0.5rem;
+    }
+    section h2{
+        font-size: 3.5rem;
+        padding: 3rem;
+    }
+    /* section .promote h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    section .promote p{
+        margin: 5rem;
+        font-size: 1.4rem;
+    }
+   section .about button{
+       padding: 0.6rem;
+       font-size: 1.1rem;
+       width: 50%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
