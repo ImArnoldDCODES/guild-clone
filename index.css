@@ -33,6 +33,9 @@ nav ul button{
     padding: 10px;
     font-size: 1.3rem;
 }
+button:hover{
+    font-size: 1.2rem;
+}
 nav ul li{
     list-style: none;
     padding: 1rem;
@@ -68,6 +71,9 @@ main button{
     padding: 0.6rem;
     border: none;
     color: #fff;
+}
+main button:hover{
+    font-size: 1.12rem;
 }
 .border-header{
     display: flex;
